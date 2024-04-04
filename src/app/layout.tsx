@@ -37,11 +37,6 @@ export default function RootLayout({children}: React.PropsWithChildren) {
       </head>
         <body className={mulish.className}>
         {children}
-        <noscript>
-            <img height="1" width="1" className="hidden"
-                 src="https://www.facebook.com/tr?id=691462736338304&ev=PageView&noscript=1"
-            />
-        </noscript>
         </body>
       </html>
   )

@@ -2,23 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #221F2E;
   background: #f4f3fe;
+  font-size: 18px;
 }
 
 #layout {
@@ -30,4 +17,46 @@ body {
   height: 20px;
   border-radius: 25%;
   background-color: white;
+}
+
+ol:not(.list-decimal) {
+  counter-reset: section;
+}
+
+ol:not(.list-decimal) > li::before {
+  content: counter(section);
+  counter-increment: section;
+  font-weight: bold;
+  background-color: #A699FF;
+  color: white;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  text-align: center;
+  line-height: 2em;
+  margin-right: 1em;
+}
+
+ol.list-decimal {
+  counter-reset: section;
+}
+
+ol.list-decimal li {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+ol.list-decimal li::before {
+  content: counter(section);
+  counter-increment: section;
+  display: inline-block;
+  margin-right: 0.5em;
+  font-size: 1.875rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+li, p {
+  margin-bottom: 0.7em;
 }

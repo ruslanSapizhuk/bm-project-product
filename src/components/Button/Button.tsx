@@ -10,8 +10,8 @@ const Button: FC<Props> = ({ children, inverted, className, ...props }) => {
     <button
       {...props}
       className={clsx(
-        "rounded-full border-0 px-8 py-3 cursor-pointer text-white",
-        inverted ? "bg-default" : "bg-black",
+        "rounded-full border-0 px-8 py-4 cursor-pointer text-white",
+        inverted ? "bg-button" : "bg-black",
         className
       )}
     >

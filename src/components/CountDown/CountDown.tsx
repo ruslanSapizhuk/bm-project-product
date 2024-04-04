@@ -1,6 +1,6 @@
 "use client"
 import { FC, useEffect, useState } from 'react';
-import { formatDuration, intervalToDuration, Duration } from 'date-fns';
+import { formatDuration, intervalToDuration, Duration, formatDistance } from 'date-fns';
 
 type Props  = {
     startDate: Date;
@@ -24,7 +24,7 @@ export const CountDown: FC<Props> = ({ startDate, format }) => {
     }, [startDate]);
 
     return (
-        <p className="text-4xl md:text-6xl font-extrabold">
+        <p className="text-4xl md:text-6xl font-extrabold mb-2">
             {formatDuration(duration, {
                 format,
                 delimiter: ":",

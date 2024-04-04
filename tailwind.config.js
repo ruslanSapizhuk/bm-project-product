@@ -8,10 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        default: "#A699FF",
+        default: "#7D69FF",
       },
       backgroundColor: {
-        default: "#646AFF",
+        default: "#7D69FF",
+        button: "#7D69FF",
+        label: "rgba(167, 153, 255, 0.4)"
+      },
+      borderColor: {
+        default: "#A699FF",
         label: "rgba(167, 153, 255, 0.4)"
       },
       backgroundImage: {
