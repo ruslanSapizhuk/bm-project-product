@@ -7,7 +7,17 @@ import Danone from "@/assets/Danone.png";
 import ActiveChat from "@/assets/ActiveChat.png";
 import ABLnBev from "@/assets/ABLnBev.png";
 import Wispence from "@/assets/Wispence.png";
-// import IrynkaKhalus from "@/assets/IrynkaKhalus.png";
+import student from "@/assets/student.png";
+import swicher from "@/assets/swicher.png";
+import remoute from "@/assets/remoute.png";
+import product from "@/assets/product.png";
+import statistics from "@/assets/statistics.png";
+import mobile from "@/assets/mobile.png";
+import education from "@/assets/education.png";
+import laptop from "@/assets/laptop.png";
+import books from "@/assets/books.png";
+import support from "@/assets/support.png";
+import sertificate from "@/assets/sertificate.png";
 // import AnastasiyaMelnik from "@/assets/AnastasiyaMelnik.png";
 // import Mariya from "@/assets/Mariya.png";
 // import MariyaPolonskaya from "@/assets/MariyaPolonskaya.png";
@@ -24,7 +34,7 @@ import icon2 from "@/assets/icon_2.png";
 import icon3 from "@/assets/icon_3.png";
 import icon4 from "@/assets/icon_4.png";
 import icon5 from "@/assets/icon_5.png";
-import hart from "@/assets/hart.png";
+// import hart from "@/assets/hart.png";
 import Video1 from "@/components/videos/Video1";
 import Video2 from "@/components/videos/Video2";
 import Video3 from "@/components/videos/Video3";
@@ -44,7 +54,7 @@ export default function Home() {
               by LANA & BM
             </div>
           </header>
-          <section className="md:flex md:justify-between md:gap-20 mb-20 md:mb-20 max-w-7xl m-auto">
+          <section className="md:flex md:justify-between md:gap-20 mb-20 md:mb-36 max-w-7xl m-auto">
             <div className="md:basis-3/6 grow-1 text-center md:text-left mb-5">
             <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
               Старт 14 травня 2024
@@ -118,7 +128,9 @@ export default function Home() {
               </div>
             </div>
             <div className="md:w-5/12 md:max-w-md m:h-full md:absolute md:bottom-[137px] md:right-0 md:z-20">
-              <Image src={pmLanaImage} alt="Lana" />
+              <a href="https://www.instagram.com/lana_sapizhuk/" target={"_blank"}>
+                <Image src={pmLanaImage} alt="Lana" className={"w-full"} />
+              </a>
             </div>
           </section>
           <section className="mb-10 md:mb-20 max-w-7xl m-auto">
@@ -132,25 +144,37 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-5">
                 <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Для новачків / студентів / свічерів</h3>
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={student} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Для новачків / студентів / свічерів</h3>
+                  </div>
                   <p>
                     Хочеш освоїти одну з найбільш  затребуваних нетехнічних ІТ-професій - Product&Project Manager та працювати віддалено з будь-якої точки світу та отримувати дохід в $
                   </p>
                 </div>
                 <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Для тих, хто в пошуку себе або хоче ввійти в ІТ</h3>
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={swicher} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Для тих, хто в пошуку себе або хоче ввійти в ІТ</h3>
+                  </div>
                   <p>
                     Знаходитесь в пошуку себе та хочете обрати перспективну професію, яка буде приносити хорощий дохід, дозволить постійно розвиватися та рости
                   </p>
                 </div>
                 <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Хто хоче працюватии віддалено</h3>
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={remoute} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Хто хоче працюватии віддалено</h3>
+                  </div>
                   <p>
                     Онлайн професії знаходяться в ТОПі, у наш час не потрібно вчитися по 10 років, щоб отримати роботу мрії. Зараз достатньо пару місяців, щоб освоїти затребувану онлайн професію та почати заробляти
                   </p>
                 </div>
                 <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Хоче створити свій ІТ продукт</h3>
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={product} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Хоче створити свій ІТ продукт</h3>
+                  </div>
                   <p>
                     Зі знаннями які я даю на навчанні ти зможеш створити свій ІТ продукт та почати заробляти на ньому. Або ж заснувати власну  ІТ компанію і брати замовлення на розробку сайтів, додатків тощо.
                   </p>
@@ -167,7 +191,7 @@ export default function Home() {
             </h2>
            <ol className={"list-inside text-xl md:flex md:gap-10"}>
              <li>
-               <h3 className={"inline-block text-2xl text-default font-bold"}>Теорея і практика</h3>
+               <h3 className={"inline-block text-2xl text-default font-bold"}>Теорія і практика</h3>
               <div className={"max-w-lg"}>
                 <p className={"font-bold"}>
                   Отримаєш теоретичні і практичні знання з продукт менеджменту
@@ -177,7 +201,12 @@ export default function Home() {
                   <li><span className={"text-black text-xl"}>Опануєш всі необхідні знання, фреймворки та інструменти, щоб отримати Job Offer та впевнено відчувати себе на роботі</span></li>
                   <li><span className={"text-black text-xl"}>Закріпиш знання практикою та отримаєш кейс у портфоліо</span></li>
                   <li><span className={"text-black text-xl"}>Ти зможеш працювати класичним Project менеджером, або Product менеджером, чи піти на позицію де обовʼязки є змішаними - а це насправді найчастіше трапляється. Саме тому я і обʼєднала ці 2 напрямки в одному курсі 🔥</span></li>
-                  <li><span className={"text-black text-xl"}>Можливість рости в доході до 5-10к$ 💸 дивися зріз по зп з DOU👇</span></li>
+                  <li>
+                    <span className={"text-black text-xl"}>Можливість рости в доході до 5-10к$ 💸 дивися зріз по зп з DOU👇</span>
+                    <div className={"mt-5"}>
+                      <Image src={statistics} alt={"DOU"}/>
+                    </div>
+                  </li>
                 </ul>
               </div>
              </li>
@@ -439,48 +468,46 @@ export default function Home() {
             <div className="flex flex-wrap">
               <div className="lg:basis-10/12 flex flex-wrap gap-10 align-baseline mb-10">
                 <div className="md:basis-5/12 grow-1 bg-white rounded-3xl p-5">
-                  <div>
-                    <Image src={icon1} alt={""} />
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={product} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Стартап</h3>
                   </div>
-                  <h3 className="font-bold">Стартап</h3>
                   <p>
                     Можна почати працювати в  стартапі. <b>Зараз багато блогерів та медійних людей в Україні починають створювати свої ІТ продукти - Даша Астафʼєва, Даша Квіткова, Аніта Соловей та інші.</b>  Або створити свій ІТ продукт,  Digital агенцію чи WEB студію.
                   </p>
                 </div>
                 <div className="md:basis-5/12  grow-1 bg-white rounded-3xl p-5">
-                  <div>
-                    <Image src={icon2} alt={""} />
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={mobile} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Продуктова ІТ компанія</h3>
                   </div>
-                  <h3 className="font-bold">Продуктова ІТ компанія</h3>
                   <p>
                     Можна потрапити на роботу в продуктову компанію та працювати з ІТ продуктом - наприклад <b>в банківський додаток MONO, чи в фітнес додаток Better Me</b>
                   </p>
                 </div>
                 <div className="md:basis-5/12 grow-1 bg-white rounded-3xl p-5">
-                  <div>
-                    <Image src={icon3} alt={""} />
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={swicher} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Маркетинг агенство | Дизайн студія | WEB студія</h3>
                   </div>
-                  <h3 className="font-bold">
-                    Маркетинг агенство | Дизайн студія | WEB студія
-                  </h3>
                   <p>
                     Не обовʼязково відразу іти в складний ІТ продукт, можна спокійно почати з чогось простішого - менеджерити дизайнерів, таргетологів, чи smm в маркетингових агенствах чи Дизайн & WEB студіях
                   </p>
                 </div>
                 <div className="md:basis-5/12 grow-1 bg-white rounded-3xl p-5">
-                  <div>
-                    <Image src={icon5} alt={""} />
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={education} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Сфера освіти - EDtech</h3>
                   </div>
-                  <h3 className="font-bold">Сфера освіти - EDtech</h3>
                   <p>
                     Можна почати працювати з освітніми проєктами, школами чи експертами які створюють свої освітні продукти та потребують допомоги в організації процесів його створення та маштабування
                   </p>
                 </div>
                 <div className="md:basis-5/12 grow-1 bg-white rounded-3xl p-5 m-auto">
-                  <div>
-                    <Image src={icon4} alt={""} />
+                  <div className={'flex mb-3 relative'}>
+                    <Image src={laptop} alt={"Для новачків / студентів / свічерів"} className={"absolute left-[-35px] top-[-15px] md:top-[-35px]"}/>
+                    <h3 className="font-bold pl-10">Аутсорсингова ІТ компанія</h3>
                   </div>
-                  <h3 className="font-bold">Аутсорсингова ІТ компанія</h3>
                   <p>
                     Можна менеджерити ІТ проєкти для іноземних замовників. В Україні є дуже багато крутих аутсорсингових ІТ компаній в які згодом можна потрапити - EРАM, GlobalLogic, SoftServe, Luxoft, Sigma Software та багато інших, якім необхідні такі спеціалісти як Product&Project менеджери
                   </p>
@@ -500,12 +527,12 @@ export default function Home() {
                 <p>До старту навчання залишилось</p>
               </div>
             </div>
-            <div className="gap-10 h-[780px] md:h-[620px] mb-24">
+            <div className="gap-10 h-[800px] md:h-[620px] mb-24">
               <Carousel activeIndex={1} data={[
                 <div key={"junior"} className="px-7 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl uppercase font-bold text-default mb-2">Тариф “Junior”</h3>
-                    <div className={"flex flex-wrap gap-2 mb-5"}>
+                    <div className={"flex flex-wrap gap-2 mb-3"}>
                       <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
                         Модуль 1
                       </span>
@@ -517,22 +544,22 @@ export default function Home() {
                       </span>
                     </div>
                     <ul>
-                      <li>
-                          Домашні завдання
+                      <li className={"flex gap-2"}>
+                          <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>Домашні завдання
                       </li>
-                      <li>
-                        Підтримка куратора
+                      <li className={"flex gap-2"}>
+                        <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>Підтримка куратора
                       </li>
-                      <li>
-                        <b>Cертифікат про проходження навчання</b>
+                      <li className={"flex gap-2 items-center"}>
+                        <Image src={sertificate} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Cертифікат про проходження навчання</b>
                       </li>
                     </ul>
                   </div>
                   <div className={"text-center"}>
                     <p>
-                      <span className="text-2xl font-extrabold">$300</span>
+                      <span className="text-2xl font-extrabold">$350</span>
                     </p>
-                    <Link href={LINK_1} target={"_blank"}>
+                    <Link href={"https://secure.wayforpay.com/button/b23876d0a99d1"} target={"_blank"}>
                       <Button inverted>Обрати тариф</Button>
                     </Link>
                   </div>
@@ -540,7 +567,7 @@ export default function Home() {
                 <div key={"junior"} className="px-7 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl uppercase font-bold text-default mb-2">Тариф “Middle”</h3>
-                    <div className={"flex flex-wrap gap-2 mb-5"}>
+                    <div className={"flex flex-wrap gap-2 mb-3"}>
                       <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
                         Модуль 1
                       </span>
@@ -558,27 +585,33 @@ export default function Home() {
                       </span>
                     </div>
                     <ul>
-                      <li>
+                      <li className={"flex gap-2"}>
+                        <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>
+                        <p>
                         <b>Домашні завдання</b>
                         <br/>
                         Перевірка та зворотній звʼязок
                         по ДЗ
+                      </p>
                       </li>
-                      <li>
-                        <b>Підтримка куратора</b>
-                        <br/>
-                        5 Q/A сесій з Ланою
+                      <li className={"flex gap-2"}>
+                        <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>
+                        <p>
+                          <b>Підтримка куратора</b>
+                          <br/>
+                          5 Q/A сесій з Ланою
+                        </p>
                       </li>
-                      <li>
-                        <b>Cертифікат про проходження навчання</b>
+                      <li className={"flex gap-2 items-center"}>
+                        <Image src={sertificate} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Cертифікат про проходження навчання</b>
                       </li>
                     </ul>
                   </div>
                   <div className={"text-center"}>
                     <p>
-                      <span className="text-2xl font-extrabold">$500</span>
+                      <span className="text-2xl font-extrabold">$550</span>
                     </p>
-                    <Link href={LINK_1} target={"_blank"}>
+                    <Link href={"https://secure.wayforpay.com/button/b92bd7921e95d"} target={"_blank"}>
                       <Button inverted>Обрати тариф</Button>
                     </Link>
                   </div>
@@ -586,7 +619,7 @@ export default function Home() {
                 <div key={"junior"} className="px-7 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl uppercase font-bold text-default mb-2">Тариф “Senior”</h3>
-                    <div className={"flex flex-wrap gap-2 mb-5"}>
+                    <div className={"flex flex-wrap gap-2 mb-3"}>
                       <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
                         Модуль 1
                       </span>
@@ -604,40 +637,46 @@ export default function Home() {
                       </span>
                     </div>
                     <ul>
-                      <li>
-                        <b>Домашні завдання</b>
-                        <br/>
-                        Перевірка та зворотній звʼязок
-                        по ДЗ
+                      <li className={"flex gap-2"}>
+                        <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>
+                        <p>
+                          <b>Домашні завдання</b>
+                          <br/>
+                          Перевірка та зворотній звʼязок
+                          по ДЗ
+                        </p>
                       </li>
-                      <li>
-                        <b>Підтримка куратора</b>
-                        <br/>
-                        5 Q/A сесій з Ланою
+                      <li className={"flex gap-2"}>
+                        <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>
+                        <p>
+                          <b>Підтримка куратора</b>
+                          <br/>
+                          5 Q/A сесій з Ланою
+                        </p>
                       </li>
-                      <li>
-                        <b>Cертифікат про проходження навчання</b>
+                      <li className={"flex gap-2 items-center"}>
+                        <Image src={sertificate} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Cертифікат про проходження навчання</b>
                       </li>
                     </ul>
-                    <hr/>
-                    <p className={"font-bold text-lg"}>Преміум бонуси</p>
-                    <ul>
+                    <hr />
+                    <p className={"font-bold text-lg mt-2"}>Преміум бонуси</p>
+                    <ul className={"list-inside list-disc"}>
                       <li>
                         Стажування в агенції Лани - Bissness Maker
                       </li>
                       <li>
                         Реальний кейс у портфоліо
                       </li>
-                      <li>`
+                      <li>
                         Рекомендаційний лист про стажування в агенції BM
                       </li>
                     </ul>
                   </div>
                   <div className={"text-center"}>
                     <p>
-                      <span className="text-2xl font-extrabold">$700</span>
+                      <span className="text-2xl font-extrabold">$750</span>
                     </p>
-                    <Link href={LINK_1} target={"_blank"}>
+                    <Link href={"https://secure.wayforpay.com/button/b15e3098cddbf"} target={"_blank"}>
                       <Button inverted>Обрати тариф</Button>`
                     </Link>
                   </div>
