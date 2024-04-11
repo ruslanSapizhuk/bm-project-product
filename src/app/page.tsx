@@ -18,6 +18,7 @@ import laptop from "@/assets/laptop.png";
 import books from "@/assets/books.png";
 import support from "@/assets/support.png";
 import sertificate from "@/assets/sertificate.png";
+import bonus from "@/assets/bonus.png";
 // import AnastasiyaMelnik from "@/assets/AnastasiyaMelnik.png";
 // import Mariya from "@/assets/Mariya.png";
 // import MariyaPolonskaya from "@/assets/MariyaPolonskaya.png";
@@ -62,7 +63,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-2xl mt-5 mb-10">
                 Живий онлайн курс<br/>
                 <span className="font-extrabold uppercase text-default">
-                  Strong Product & Project Manager
+                  Strong IT Product&nbsp;&&nbsp;Project Manager
                 </span><br/>
                 від Лани Сапіжук
               </h2>
@@ -358,17 +359,17 @@ export default function Home() {
               <div>
                 <h3 className={"uppercase text-2xl font-extrabold mb-2"}>Керування продуктом & управління проєктами </h3>
                 <p className={"max-w-2xl text-lg"}>
-                  Як бути ефективним лідером команди з дизайну та розробки продукту. Зворотній звʼязок та вирішення конфліктів.
+                  В цьому модулі ми навчимося як керувати продуктом та проєктами: взаємодіяти з командою, та методології управління.
                 </p>
                 <p>
-                  Методи оцінювання задач з командою, пріоритизація задач із використанням RICE framework
+                  А також розберемось з технічними моментами, які необхідно знати при стоворенні сайтів та додатків та при взаємодії з розробниками.
                 </p>
                 <ol className={"list-inside list-decimal"}>
                   <li>
-                    Інструменти аналітики: Mixpanel, Amplitude, Google Analytics. Аналітичні івенти.
+                    Як бути ефективним лідером команди з дизайну та розробки продукту. Зворотній звʼязок та вирішення конфліктів.
                   </li>
                   <li>
-                    Основні  метрики - метрики активації та утримання користувачів, метрики росту продукту, маркетингові метрики, ключові метрики монетизації,
+                    Методи оцінювання задач з командою, пріоритизація задач із використанням RICE framework
                   </li>
                   <li>
                     Agile фреймворки. Scrum, Kanban, Scramban, Waterfall.
@@ -527,28 +528,41 @@ export default function Home() {
                 <p>До старту навчання залишилось</p>
               </div>
             </div>
-            <div className="gap-10 h-[800px] md:h-[620px] mb-24">
+            <div className="gap-10 h-[630px] md:h-[600px] mb-24">
               <Carousel activeIndex={1} data={[
                 <div key={"junior"} className="px-7 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl uppercase font-bold text-default mb-2">Тариф “Junior”</h3>
-                    <div className={"flex flex-wrap gap-2 mb-3"}>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 1
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 2
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 3
-                      </span>
-                    </div>
-                    <ul>
-                      <li className={"flex gap-2"}>
-                          <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>Домашні завдання
+                    <ul className={"mb-5 text-base"}>
+                      <li className={"border-b-2 py-2 flex gap-3 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 1
+                          </span>
+                        <span>Product менеджмент</span>
                       </li>
-                      <li className={"flex gap-2"}>
-                        <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>Підтримка куратора
+                      <li className={"border-b-2 py-2 flex gap-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 2
+                          </span>
+                        <span>Unit Економіка</span>
+                      </li>
+                      <li className={"border-b-2 py-2 flex gap-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 3
+                          </span>
+                        <span>Керування продуктом & Управління проєктами</span>
+                      </li>
+                    </ul>
+                    <ul className={"text-base leading-5"}>
+                      <li className={"flex gap-2 items-center"}>
+                        <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>
+                        <p>
+                          <b>Домашні завдання та підтримка куратора</b>
+                        </p>
+                      </li>
+                      <li className={"flex gap-2 items-center"}>
+                        <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>
+                        <b>3 Q/A сесій з Ланою</b>
                       </li>
                       <li className={"flex gap-2 items-center"}>
                         <Image src={sertificate} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Cертифікат про проходження навчання</b>
@@ -557,50 +571,60 @@ export default function Home() {
                   </div>
                   <div className={"text-center"}>
                     <p>
-                      <span className="text-2xl font-extrabold">$350</span>
+                      <span className="text-2xl font-extrabold">$290</span>
                     </p>
                     <Link href={"https://secure.wayforpay.com/button/b23876d0a99d1"} target={"_blank"}>
                       <Button inverted>Обрати тариф</Button>
                     </Link>
                   </div>
                 </div>,
-                <div key={"junior"} className="px-7 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
+                <div key={"junior"} className="px-5 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl uppercase font-bold text-default mb-2">Тариф “Middle”</h3>
-                    <div className={"flex flex-wrap gap-2 mb-3"}>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 1
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 2
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 3
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 4
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 5
-                      </span>
-                    </div>
-                    <ul>
-                      <li className={"flex gap-2"}>
+                    <ul className={"mb-5 text-base"}>
+                      <li className={"border-b-2 py-2 flex gap-3 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 1
+                          </span>
+                          <span>Product менеджмент</span>
+                      </li>
+                      <li className={"border-b-2 py-2 flex gap-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 2
+                          </span>
+                          <span>Unit Економіка</span>
+                      </li>
+                      <li className={"border-b-2 py-2 flex gap-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 3
+                          </span>
+                          <span>Керування продуктом & Управління проєктами</span>
+                      </li>
+                      <li className={"border-b-2 py-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 4
+                          </span>
+                        {' '}
+                        Продуктовий маркетинг
+                      </li>
+                      <li className={"border-b-2 py-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 5
+                          </span>
+                        {' '}
+                        AI для PM
+                      </li>
+                    </ul>
+                    <ul className={"text-base leading-5"}>
+                      <li className={"flex gap-2 items-center"}>
                         <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>
                         <p>
-                        <b>Домашні завдання</b>
-                        <br/>
-                        Перевірка та зворотній звʼязок
-                        по ДЗ
+                        <b>Домашні завдання та підтримка куратора</b>
                       </p>
                       </li>
-                      <li className={"flex gap-2"}>
+                      <li className={"flex gap-2 items-center"}>
                         <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>
-                        <p>
-                          <b>Підтримка куратора</b>
-                          <br/>
-                          5 Q/A сесій з Ланою
-                        </p>
+                        <b>7 Q/A сесій з Ланою</b>
                       </li>
                       <li className={"flex gap-2 items-center"}>
                         <Image src={sertificate} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Cертифікат про проходження навчання</b>
@@ -609,7 +633,7 @@ export default function Home() {
                   </div>
                   <div className={"text-center"}>
                     <p>
-                      <span className="text-2xl font-extrabold">$550</span>
+                      <span className="text-2xl font-extrabold">$490</span>
                     </p>
                     <Link href={"https://secure.wayforpay.com/button/b92bd7921e95d"} target={"_blank"}>
                       <Button inverted>Обрати тариф</Button>
@@ -619,62 +643,62 @@ export default function Home() {
                 <div key={"junior"} className="px-7 py-4 rounded-3xl bg-white md:basis-1/2 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl uppercase font-bold text-default mb-2">Тариф “Senior”</h3>
-                    <div className={"flex flex-wrap gap-2 mb-3"}>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 1
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 2
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 3
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 4
-                      </span>
-                      <span className="text-sm px-4 py-2 normal-case font-light rounded-md bg-label text-xl font-bold text-default">
-                        Модуль 5
-                      </span>
-                    </div>
-                    <ul>
-                      <li className={"flex gap-2"}>
+                    <ul className={"mb-5 text-base"}>
+                      <li className={"border-b-2 py-2 flex gap-3 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 1
+                          </span>
+                        <span>Product менеджмент</span>
+                      </li>
+                      <li className={"border-b-2 py-2 flex gap-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 2
+                          </span>
+                        <span>Unit Економіка</span>
+                      </li>
+                      <li className={"border-b-2 py-2 flex gap-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 3
+                          </span>
+                        <span>Керування продуктом & Управління проєктами</span>
+                      </li>
+                      <li className={"border-b-2 py-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 4
+                          </span>
+                        {' '}
+                        Продуктовий маркетинг
+                      </li>
+                      <li className={"border-b-2 py-2 mb-0"}>
+                          <span className="text-default font-bold whitespace-nowrap">
+                            Модуль 5
+                          </span>
+                        {' '}
+                        AI для PM
+                      </li>
+                    </ul>
+                    <ul className={"text-base leading-5"}>
+                      <li className={"flex gap-2 items-center"}>
                         <Image src={books} alt={"Домашні завдання"} className={"w-[20px] h-[20px]"}/>
                         <p>
-                          <b>Домашні завдання</b>
-                          <br/>
-                          Перевірка та зворотній звʼязок
-                          по ДЗ
+                          <b>Домашні завдання та підтримка куратора</b>
                         </p>
                       </li>
-                      <li className={"flex gap-2"}>
+                      <li className={"flex gap-2 items-center"}>
                         <Image src={support} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/>
-                        <p>
-                          <b>Підтримка куратора</b>
-                          <br/>
-                          5 Q/A сесій з Ланою
-                        </p>
+                        <b>7 Q/A сесій з Ланою</b>
                       </li>
                       <li className={"flex gap-2 items-center"}>
                         <Image src={sertificate} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Cертифікат про проходження навчання</b>
                       </li>
-                    </ul>
-                    <hr />
-                    <p className={"font-bold text-lg mt-2"}>Преміум бонуси</p>
-                    <ul className={"list-inside list-disc"}>
-                      <li>
-                        Стажування в агенції Лани - Bissness Maker
-                      </li>
-                      <li>
-                        Реальний кейс у портфоліо
-                      </li>
-                      <li>
-                        Рекомендаційний лист про стажування в агенції BM
+                      <li className={"flex gap-2 items-center"}>
+                        <Image src={bonus} alt={"Підтримка куратора"} className={"w-[20px] h-[20px]"}/><b>Стажування в BM, кейс в портфоліо</b>
                       </li>
                     </ul>
                   </div>
                   <div className={"text-center"}>
                     <p>
-                      <span className="text-2xl font-extrabold">$750</span>
+                      <span className="text-2xl font-extrabold">$690</span>
                     </p>
                     <Link href={"https://secure.wayforpay.com/button/b15e3098cddbf"} target={"_blank"}>
                       <Button inverted>Обрати тариф</Button>`
