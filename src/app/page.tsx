@@ -26,6 +26,16 @@ import reviews3 from "@/assets/IMG_3244.png";
 import reviews4 from "@/assets/IMG_3245.png";
 import reviews5 from "@/assets/IMG_3246.png";
 import reviews6 from "@/assets/IMG_3247.png";
+import k11 from "@/assets/k11.png";
+import k12 from "@/assets/k12.png";
+import k21 from "@/assets/k21.png";
+import k22 from "@/assets/k22.png";
+import k31 from "@/assets/k31.png";
+import k32 from "@/assets/k32.png";
+import k41 from "@/assets/k41.png";
+import k42 from "@/assets/k42.png";
+import k51 from "@/assets/k41.png";
+import k52 from "@/assets/k42.png";
 // import AnastasiyaMelnik from "@/assets/AnastasiyaMelnik.png";
 // import Mariya from "@/assets/Mariya.png";
 // import MariyaPolonskaya from "@/assets/MariyaPolonskaya.png";
@@ -712,7 +722,7 @@ export default function Home() {
           </section>
           <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black mb-20">
             <h2 className="text-2xl md:text-4xl max-w-2xl mb-10 font-extrabold uppercase">
-              Відгуки & кейси працевлаштування студентів
+              Відгуки студентів
               <span style={{ color: "#A699FF" }} className="pr-3">
                 {' Лани'}
             </span>
@@ -725,6 +735,28 @@ export default function Home() {
                 <Image key={3} src={reviews4} alt={""}/>,
                 <Image key={3} src={reviews5} alt={""}/>,
                 <Image key={3} src={reviews6} alt={""}/>,
+              ]} />
+            </div>
+          </section>
+          <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black mb-20">
+            <h2 className="text-2xl md:text-4xl max-w-2xl mb-10 font-extrabold uppercase">
+              Кейси працевлаштування студентів
+              <span style={{ color: "#A699FF" }} className="pr-3">
+                {' Лани'}
+            </span>
+            </h2>
+            <div className="h-[400px] md:h-[500px] max-w-3xl m-auto">
+              <Carousel data={[
+                <Image key={1} src={k11} alt={""}/>,
+                <Image key={2} src={k12} alt={""}/>,
+                <Image key={3} src={k21} alt={""}/>,
+                <Image key={4} src={k22} alt={""}/>,
+                <Image key={5} src={k31} alt={""}/>,
+                <Image key={6} src={k32} alt={""}/>,
+                <Image key={7} src={k41} alt={""}/>,
+                <Image key={8} src={k42} alt={""}/>,
+                <Image key={3} src={k51} alt={""}/>,
+                <Image key={3} src={k52} alt={""}/>,
               ]} />
             </div>
           </section>
