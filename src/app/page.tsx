@@ -1,7 +1,8 @@
 import Button from "@/components/Button";
 import Image from "next/image";
-import CountDown from "@/components/CountDown";
 import Link from "next/link";
+import CountDown from "@/components/CountDown";
+import {Carousel} from "../components/Carousel/Carousel";
 import pmLanaImage from "@/assets/PM-Lana.png";
 import Danone from "@/assets/Danone.png";
 import ActiveChat from "@/assets/ActiveChat.png";
@@ -19,6 +20,12 @@ import books from "@/assets/books.png";
 import support from "@/assets/support.png";
 import sertificate from "@/assets/sertificate.png";
 import bonus from "@/assets/bonus.png";
+import reviews1 from "@/assets/IMG_3242.png";
+import reviews2 from "@/assets/IMG_3243.png";
+import reviews3 from "@/assets/IMG_3244.png";
+import reviews4 from "@/assets/IMG_3245.png";
+import reviews5 from "@/assets/IMG_3246.png";
+import reviews6 from "@/assets/IMG_3247.png";
 // import AnastasiyaMelnik from "@/assets/AnastasiyaMelnik.png";
 // import Mariya from "@/assets/Mariya.png";
 // import MariyaPolonskaya from "@/assets/MariyaPolonskaya.png";
@@ -36,15 +43,10 @@ import icon3 from "@/assets/icon_3.png";
 import icon4 from "@/assets/icon_4.png";
 import icon5 from "@/assets/icon_5.png";
 // import hart from "@/assets/hart.png";
+
 import Video1 from "@/components/videos/Video1";
 import Video2 from "@/components/videos/Video2";
 import Video3 from "@/components/videos/Video3";
-import {Carousel} from "../components/Carousel/Carousel";
-
-const LINK_1 = "https://secure.wayforpay.com/button/b209b2c930803";
-const LINK_2 = "https://secure.wayforpay.com/button/b8e8bd04462a1";
-const FULL_PRICE = 2000;
-const REAL_PRICE = 499;
 
 export default function Home() {
   return (
@@ -717,9 +719,12 @@ export default function Home() {
             </h2>
             <div className="h-[400px] md:h-[500px] max-w-3xl m-auto">
               <Carousel data={[
-                <Video1 key={1} />,
-                <Video2 key={2} />,
-                <Video3 key={3} />
+                <Image key={1} src={reviews1} alt={""}/>,
+                <Image key={2} src={reviews2} alt={""}/>,
+                <Image key={3} src={reviews3} alt={""}/>,
+                <Image key={3} src={reviews4} alt={""}/>,
+                <Image key={3} src={reviews5} alt={""}/>,
+                <Image key={3} src={reviews6} alt={""}/>,
               ]} />
             </div>
           </section>
