@@ -536,7 +536,7 @@ export default function Home() {
               </h3>
               <div className="text-center">
                 <p className="md:uppercase text-xl mb-5">За спеціальною пропозицією</p>
-                <CountDown startDate={new Date("05-14-2024")} format={["months", "days", "hours", "minutes", "seconds"]}/>
+                <CountDown startDate={new Date("05-14-2024")} format={["days", "hours", "minutes", "seconds"]}/>
                 <p>До старту навчання залишилось</p>
               </div>
             </div>
