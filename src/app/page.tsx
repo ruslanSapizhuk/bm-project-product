@@ -531,11 +531,11 @@ export default function Home() {
           <section className="mb-10 md:mb-20 max-w-5xl m-auto" id="pay">
             <div className="p-7 bg-no-repeat bg-default text-white mb-10 md:mb-20 rounded-2xl max-w-5xl ml-auto mr-auto">
               <h3 className="text-xl md:text-3xl md:uppercase md:text-white mb-3 text-center">
-                ПРИЄДНУЙТЕСЬ <br/>
+                РЕЄСТРУЙСЯ <br/>
                 до навчання просто зараз
               </h3>
               <div className="text-center">
-                <p className="md:uppercase text-xl mb-5">За спеціальною пропозицією</p>
+                <p className="md:uppercase text-xl mb-5">та отримай 🎁 - сертифікат на суму 100$, яким ти частково можеш оплатити навчання.</p>
                 <CountDown startDate={new Date("05-14-2024")} format={["days", "hours", "minutes", "seconds"]}/>
                 <p>До старту навчання залишилось</p>
               </div>
@@ -582,11 +582,8 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className={"text-center"}>
-                    <p>
-                      <span className="text-2xl font-extrabold">$290</span>
-                    </p>
-                    <Link href={"https://secure.wayforpay.com/button/b23876d0a99d1"} target={"_blank"}>
-                      <Button inverted>Обрати тариф</Button>
+                    <Link href={"https://forms.gle/gcL9jdQdczLtAxa99"} target={"_blank"}>
+                      <Button inverted>Зареєструватися</Button>`
                     </Link>
                   </div>
                 </div>,
@@ -644,11 +641,8 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className={"text-center"}>
-                    <p>
-                      <span className="text-2xl font-extrabold">$490</span>
-                    </p>
-                    <Link href={"https://secure.wayforpay.com/button/b92bd7921e95d"} target={"_blank"}>
-                      <Button inverted>Обрати тариф</Button>
+                    <Link href={"https://forms.gle/gcL9jdQdczLtAxa99"} target={"_blank"}>
+                      <Button inverted>Зареєструватися</Button>`
                     </Link>
                   </div>
                 </div>,
@@ -709,11 +703,8 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className={"text-center"}>
-                    <p>
-                      <span className="text-2xl font-extrabold">$690</span>
-                    </p>
-                    <Link href={"https://secure.wayforpay.com/button/b15e3098cddbf"} target={"_blank"}>
-                      <Button inverted>Обрати тариф</Button>`
+                    <Link href={"https://forms.gle/gcL9jdQdczLtAxa99"} target={"_blank"}>
+                      <Button inverted>Зареєструватися</Button>`
                     </Link>
                   </div>
                 </div>
